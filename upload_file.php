@@ -4,7 +4,7 @@ Email Address: <?php echo $_POST["email"]; ?><br>
 
 <?php
 
-$allowtype = array("gif","png","jpg","pdf","doc"); 
+$allowtype = array("gif","png","jpg","pdf","docx"); 
 $size = 1000000; 
 $path = "./uploads"; 
 
@@ -58,4 +58,4 @@ for( $i = 0;$i < count($_FILES['myfile']['error']);$i++ ){
     echo "{$upfile[$i]}&nbsp; Uploading successfully,Save in the{$path}，file size:{$filesize[$i]}KB<br>";
 }
 ?>
-<a href="http://localhost/project/careers.html" class="btn btn-warning">Back</a>
+<a href="http://192.168.43.228/project/careers.html" class="btn btn-warning">Back</a>
